@@ -1,0 +1,31 @@
+:root {
+    --FontPrincipal: sans-serif;
+    --FontSecundary: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --RadioBorde: 10px;
+}
+
+
+.base {
+    background-color: blue;
+}
+
+.important {
+    background-color:darkblue;
+    color: blanchedalmond;
+}
+
+.warning {
+    background-color: lightblue;
+}
+
+.shadow {
+    box-shadow: 10px 10px 20px;
+}
+
+.Font_Principal {
+    font-family: var(--FontPrincipal);
+}
+
+.Font_Secundary {
+    font-family: var(--FontSecundary);
+}

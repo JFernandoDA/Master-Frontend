@@ -1,0 +1,30 @@
+:root {
+    --FontPrincipal: Courier;
+    --FontSecundary: Arial, Helvetica, sans-serif;
+    --RadioBorde: 0px;
+}
+
+.base {
+    background-color:rgba(255, 60, 0, 0.986);
+}
+
+.important {
+    background-color: darkred;
+    color: blanchedalmond;
+}
+
+.warning {
+    background-color: rosybrown;
+}
+
+.shadow {
+    box-shadow: -10px 10px 20px;
+}
+
+.Font_Principal {
+    font-family: var(--FontPrincipal);
+}
+
+.Font_Secundary {
+    font-family: var(--FontSecundary);
+}

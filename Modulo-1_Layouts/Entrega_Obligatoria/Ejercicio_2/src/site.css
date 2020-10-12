@@ -1,0 +1,21 @@
+@import url("./Theme1.css");
+
+div {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: var(--RadioBorde);
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    margin: 50px;
+}

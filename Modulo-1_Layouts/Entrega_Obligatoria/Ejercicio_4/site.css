@@ -1,0 +1,58 @@
+.MainContainer {
+    width: 500px;
+    border-bottom: 5px solid lightgrey;
+    border-top: 5px solid lightgrey;
+    border-left: 10px solid lightgrey;
+    border-right: 10px solid lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-row: auto auto auto;
+    grid-template-columns: 500px;
+}
+
+.imagen {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 500px;
+}
+
+.Texto {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    width: 460px;
+    line-break: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contenedorBoton {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+img {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.Pie {
+    display: block;
+    text-align: end;
+}
+
+.ButtonMoreInfo{
+    margin: 15px;
+    display: block;
+    height: 50px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+    font-weight: bold;
+    color: honeydew;
+    font-size: large;
+}
