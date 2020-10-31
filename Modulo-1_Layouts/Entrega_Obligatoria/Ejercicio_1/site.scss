@@ -3,165 +3,164 @@ $color2: blue;
 $color3: green;
 
 @mixin color_container() {
-    height: 100px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    border: 1px,solid,black;
-    border-radius: 10px;
-    span {
-        align-self: center;
-        color: white;
-    }
-    width: 95vw;  
+  height: 100px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  border: 1px, solid, black;
+  border-radius: 10px;
+  span {
+    align-self: center;
+    color: white;
+  }
+  width: 95vw;
 }
 
 @mixin container {
-    display: flex;
-    justify-content: inline-block;
- 
-} 
+  display: flex;
+  justify-content: inline-block;
+}
 
 .container-1 {
-    @include container();
-   .box.base-color{
-       @include color_container();
-        background-color:$color1;
-    }  
+  @include container();
+  .box.base-color {
+    @include color_container();
+    background-color: $color1;
+  }
 
-    .box.lighten-1{
-        @include color_container();
-        background-color: lighten($color1,10%); 
-    } 
+  .box.lighten-1 {
+    @include color_container();
+    background-color: lighten($color1, 10%);
+  }
 
-    .box.lighten-2{
-        @include color_container();
-        background-color: lighten($color1,20%);
-    } 
+  .box.lighten-2 {
+    @include color_container();
+    background-color: lighten($color1, 20%);
+  }
 
-    .box.lighten-3{
-        @include color_container();
-        background-color: lighten($color1,30%);
-    } 
+  .box.lighten-3 {
+    @include color_container();
+    background-color: lighten($color1, 30%);
+  }
 
-    .box.lighten-4{
-        @include color_container();
-        background-color: lighten($color1,40%);
-    } 
+  .box.lighten-4 {
+    @include color_container();
+    background-color: lighten($color1, 40%);
+  }
 
-    .box.darken-1{   
-        @include color_container();   
-        background-color: darken($color1,10%);
-     } 
+  .box.darken-1 {
+    @include color_container();
+    background-color: darken($color1, 10%);
+  }
 
-    .box.darken-2{
-        @include color_container();
-        background-color: darken($color1,20%);
-    } 
+  .box.darken-2 {
+    @include color_container();
+    background-color: darken($color1, 20%);
+  }
 
-    .box.darken-3{
-        @include color_container();        
-        background-color: darken($color1,30%);
-    } 
+  .box.darken-3 {
+    @include color_container();
+    background-color: darken($color1, 30%);
+  }
 
-    .box.darken-4{
-        @include color_container();
-        background-color: darken($color1,40%);
-    }
+  .box.darken-4 {
+    @include color_container();
+    background-color: darken($color1, 40%);
+  }
 }
 
 .container-2 {
-    @include container();
-    .box.base-color{
-        @include color_container();
-        background-color: $color2;
-    }  
+  @include container();
+  .box.base-color {
+    @include color_container();
+    background-color: $color2;
+  }
 
-    .box.lighten-1{
-        @include color_container();
-        background-color: lighten($color2,10%);
-    } 
+  .box.lighten-1 {
+    @include color_container();
+    background-color: lighten($color2, 10%);
+  }
 
-    .box.lighten-2{
-        @include color_container();
-        background-color: lighten($color2,20%);
-    } 
+  .box.lighten-2 {
+    @include color_container();
+    background-color: lighten($color2, 20%);
+  }
 
-    .box.lighten-3{
-        @include color_container();
-        background-color: lighten($color2,30%);
-    } 
+  .box.lighten-3 {
+    @include color_container();
+    background-color: lighten($color2, 30%);
+  }
 
-    .box.lighten-4{
-        @include color_container();      
-        background-color: lighten($color2,40%);
-    } 
+  .box.lighten-4 {
+    @include color_container();
+    background-color: lighten($color2, 40%);
+  }
 
-    .box.darken-1{
-        @include color_container();
-        background-color: darken($color2,10%);
-    } 
+  .box.darken-1 {
+    @include color_container();
+    background-color: darken($color2, 10%);
+  }
 
-    .box.darken-2{
-        @include color_container();
-        background-color: darken($color2,20%);
-    } 
+  .box.darken-2 {
+    @include color_container();
+    background-color: darken($color2, 20%);
+  }
 
-    .box.darken-3{
-        @include color_container();        
-        background-color: darken($color2,30%);
-    }
+  .box.darken-3 {
+    @include color_container();
+    background-color: darken($color2, 30%);
+  }
 
-    .box.darken-4{
-        @include color_container();
-        background-color: darken($color2,40%);
-    }
+  .box.darken-4 {
+    @include color_container();
+    background-color: darken($color2, 40%);
+  }
 }
 
 .container-3 {
-    @include container();
-    .box.base-color{
-        @include color_container();
-        background-color: $color3;
-    }  
+  @include container();
+  .box.base-color {
+    @include color_container();
+    background-color: $color3;
+  }
 
-    .box.lighten-1{
-        @include color_container();
-        background-color: lighten($color3,10%);
-    } 
+  .box.lighten-1 {
+    @include color_container();
+    background-color: lighten($color3, 10%);
+  }
 
-    .box.lighten-2{
-        @include color_container();
-        background-color: lighten($color3,20%);
-    }
+  .box.lighten-2 {
+    @include color_container();
+    background-color: lighten($color3, 20%);
+  }
 
-    .box.lighten-3{
-        @include color_container();
-        background-color: lighten($color3,30%);
-    } 
+  .box.lighten-3 {
+    @include color_container();
+    background-color: lighten($color3, 30%);
+  }
 
-    .box.lighten-4{
-        @include color_container();
-        background-color: lighten($color3,40%);
-    } 
+  .box.lighten-4 {
+    @include color_container();
+    background-color: lighten($color3, 40%);
+  }
 
-    .box.darken-1{
-        @include color_container();
-        background-color: darken($color3,10%);
-    } 
+  .box.darken-1 {
+    @include color_container();
+    background-color: darken($color3, 10%);
+  }
 
-    .box.darken-2{
-        @include color_container();
-        background-color: darken($color3,20%);
-    } 
+  .box.darken-2 {
+    @include color_container();
+    background-color: darken($color3, 20%);
+  }
 
-    .box.darken-3{
-        @include color_container();
-        background-color: darken($color3,30%);
-    } 
+  .box.darken-3 {
+    @include color_container();
+    background-color: darken($color3, 30%);
+  }
 
-    .box.darken-4{
-        @include color_container();
-        background-color: darken($color3,40%);
-    }
+  .box.darken-4 {
+    @include color_container();
+    background-color: darken($color3, 40%);
+  }
 }
