@@ -7,16 +7,12 @@ interface Context {
 
 export const MyContext = React.createContext<Context>(null);
 
-    export const MycontentProvider:React.FC = (props) => {
-    const [companyName, setCompanyName] = React.useState("");
-
-    const prueba = (companyName: string) => {
-        setCompanyName(companyName)
-    }
+export const MycontentProvider:React.FC = (props) => {
+    const [companyName, setCompanyName] = React.useState("lemoncode");
 
     return (
-        <MyContext.Provider value={{companyName, setCompanyName:prueba}}>
+        <MyContext.Provider value={{companyName, setCompanyName}}>
         {props.children}
         </MyContext.Provider>
-    )
+    );
 }

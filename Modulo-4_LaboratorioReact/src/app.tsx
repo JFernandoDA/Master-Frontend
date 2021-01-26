@@ -1,25 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { LoginPage } from "./login";
-import { ListPage } from "./list";
-import { DetailPage } from "./detail";
-import { MycontentProvider } from "./myContext"
+import { MycontentProvider } from "./myContext";
+import { LoginContainer } from "./pods/login/login.container";
+import { DetailContainer } from './pods/detailMember/detail.container';
+import { ListContainer } from "./pods/list/list.container";
 
 export const App = () => {
   return (
     <Router>
       <Switch>
         <Route exact path="/">
-          <LoginPage />
+          <LoginContainer />
         </Route>
-        <Route path="/list">
-          <MycontentProvider>
-            <ListPage /> 
-          </MycontentProvider>
-        </Route>
-        <Route path="/detail/:id">
-          <DetailPage />
-        </Route>
+        <MycontentProvider>
+          <Route path="/list">
+            <ListContainer /> 
+          </Route>
+          <Route path="/detail/:id">
+            <DetailContainer />
+          </Route>
+        </MycontentProvider>
       </Switch>
     </Router>
   );
