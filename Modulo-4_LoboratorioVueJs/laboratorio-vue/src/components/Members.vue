@@ -16,7 +16,7 @@
           <td><img :src="`${member.avatar_url}`" /></td>
           <td>{{member.id}}</td>
           <td>{{member.login}}</td>
-          <td><router-link :to="`/detail/${member.login}`" @click="sendCompanyName()">Ver detalles</router-link></td>
+          <td><router-link :to="`/detail/${member.login}`">Ver detalles</router-link></td>
         </tr>
       </table>
       <br />
@@ -38,7 +38,7 @@ export default defineComponent({
     },
   data() {
     return {
-      company: "lemoncode" as string,
+      company: "" as string,
       members: [] as Member[]
     }
   }, async created() { 
@@ -59,9 +59,6 @@ export default defineComponent({
       }catch ( error ) {
         console.error( error.message )
       }
-    },
-    sendCompanyName(): void {
-      this.$emit('new-company', this.company)
     },
   }
 });
@@ -97,5 +94,9 @@ export default defineComponent({
 
   img {
     max-width: 75px;
+  }
+
+  p {
+    text-align: center;
   }
 </style>

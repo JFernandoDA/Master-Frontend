@@ -4,7 +4,7 @@
     <h1>Nombre: {{member.login}}</h1>
     <h2>Id: {{member.id}}</h2>
     <p>Miembro de {{member.company}}</p>
-    <p v-on:company-Name-Send="companyNameSent">Nombre de la compañía: {{company}}</p>
+    <p>Nombre de la compañía: {{company}}</p>
     <router-link :to="`/`">Volver</router-link>
   </div>
 </template>
@@ -36,9 +36,6 @@ export default defineComponent({
       console.error( error.message )
     }
   },methods: {
-    companyNameSent(company: string): void {
-      this.company = company;
-    },
   },
 
 })

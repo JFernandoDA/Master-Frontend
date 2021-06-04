@@ -15,10 +15,11 @@ export default defineComponent({})
 
 <style lang="scss" scoped>
 .nav {
-  min-height: 80px;
-  background-color: rgb(198, 247, 244);
   position: sticky;
   top: 0;
+  width: 100%;
+  min-height: 80px;
+  background-color: rgb(198, 247, 244);
 }
 
 .HeaderContainer {

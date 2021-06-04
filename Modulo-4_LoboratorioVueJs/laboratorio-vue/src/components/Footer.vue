@@ -13,10 +13,14 @@ export default defineComponent({})
 
 <style lang="scss" scoped>
 .nav {
-  min-height: 30px;
-  background-color: rgb(198, 247, 244);
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  width: 100%;
+  height: 32px;
+  padding-bottom: 16px;
+  border-top: 2px solid #f00;
+  z-index:2000;
+  background-color: rgb(198, 247, 244);
 }
 
 .FooterContainer {

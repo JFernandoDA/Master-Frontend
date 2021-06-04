@@ -1,5 +1,6 @@
 <template>
   <div id="filterContainer">
+    <br>
     <input type="text" name="companyName" v-model="company" />
     <button id="filterButton" @click="newCompanyName()">Filtrar</button>
   </div>
@@ -15,15 +16,18 @@ export default defineComponent({
       company: ""
     }
   }, created() { 
-    this.company = 'lemoncode';
+    this.company = store.state.company;
    },methods: {
     newCompanyName(): void {
       this.$emit('company-Name-Send', this.company);
       store.state.company = this.company;
-      console.log(store.state.company)
     },
   },
 })
 </script>
 
-<style></style>
+<style>
+  #filterContainer {
+    text-align: center;
+  }
+</style>
