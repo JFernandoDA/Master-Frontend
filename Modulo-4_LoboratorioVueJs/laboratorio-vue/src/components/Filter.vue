@@ -6,7 +6,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
+import store from '../store/index';
 
 export default defineComponent({
   data() {
@@ -17,7 +18,9 @@ export default defineComponent({
     this.company = 'lemoncode';
    },methods: {
     newCompanyName(): void {
-      this.$emit('company-Name-Send', this.company)
+      this.$emit('company-Name-Send', this.company);
+      store.state.company = this.company;
+      console.log(store.state.company)
     },
   },
 })

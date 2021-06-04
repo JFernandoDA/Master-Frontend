@@ -14,6 +14,7 @@ import { defineComponent } from 'vue';
 import { RouteLocation } from 'vue-router';
 import { getMember } from '../services/memberService';
 import { Member } from '../types/index';
+import store from '../store/index';
 
 export default defineComponent({
   data() {
@@ -28,6 +29,7 @@ export default defineComponent({
     },
   },
   async created() { 
+    this.company = store.state.company;
     try{
       this.member = await getMember( this.id );
     }catch ( error ) {

@@ -1,6 +1,6 @@
 <template>
 <div id="HomeContainer">
-  <Filter :company="company" @new-company="updateCompanyName"/>
+  <Filter :company="company" @company-Name-Send="updateCompanyName"/>
     <div id="tableContainer">
       <p>
       Lista de miembros de {{company}}
@@ -29,6 +29,7 @@ import { defineComponent } from 'vue';
 import { getMembers, getMember } from '../services/memberService';
 import { Member } from '../types/index';
 import Filter from './Filter.vue';
+import store from '../store/index';
 
 export default defineComponent({
   name: "Home",
@@ -41,6 +42,7 @@ export default defineComponent({
       members: [] as Member[]
     }
   }, async created() { 
+    this.company = store.state.company;
     try{
       this.members = await getMembers( this.company );
     }catch ( error ) {
