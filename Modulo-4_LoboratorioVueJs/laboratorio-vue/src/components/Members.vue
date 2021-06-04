@@ -16,7 +16,7 @@
           <td><img :src="`${member.avatar_url}`" /></td>
           <td>{{member.id}}</td>
           <td>{{member.login}}</td>
-          <td><router-link :to="`/detail/${member.login}`" v-on:click="sendCompanyName">Ver detalles</router-link></td>
+          <td><router-link :to="`/detail/${member.login}`" @click="sendCompanyName()">Ver detalles</router-link></td>
         </tr>
       </table>
       <br />
